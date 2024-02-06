@@ -4,7 +4,7 @@
 #2/6/2024
 
 def fib_nonrecursive ( fib_Iteration):   #Define Fibonacci Function
-    Fib_1,Fib_2,fib_compute =0,1,abs(fib_Iteration) #Define Variable, First Element, Second Element and a variable used to compute the result
+    Fib_1,Fib_2,fib_compute =0,1,abs(fib_Iteration) #Define Variable, First Element, Second Element, and a variable used to compute the result
     
     for i in range(fib_compute): #Comput Result of the Fib Sequence
         Fib_1,Fib_2 = Fib_2, Fib_1+Fib_2
@@ -18,10 +18,12 @@ IsInt = 0           #Variable Used to hold the int check loop
 while(IsInt!= 1): #Integer Check Loop
     try:            #Try to define the User Input as an Int
         Num_Iteration= int(input ("What iteration of the Fibonacci Sequence would you like? ")) #Try to Define user Iput as an integer "Num_Iteration"
-        IsInt=1     #If assignemnet was sucessful increment "IsInt" breaking the loop
+        IsInt=1     #If assignment was successful increment "IsInt" breaking the loop
 
     except ValueError:
-        print("Invailid Entry. Please enter a whole positive number")   #If unable to define UI as an int let them know and prompt for a new number
+        print("Invalid Entry. Please enter a whole number")   #If unable to define UI as an int let them know and prompt for a new number
 
 
 print("The Fibonacci Sequence is ", fib_nonrecursive(Num_Iteration)) #Print the Fibonacci Result by calling the fib_nonrecursive in a print statement
+
+
